@@ -4,8 +4,8 @@
 	<groupId>org.jsweet</groupId>
 	<artifactId>applet-example</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<name>JSweet quick start</name>
-	<description>A simple project structure to get started with JSweet</description>
+	<name>Applet example</name>
+	<description>A simple project to demonstrate how to migrate a Java applet to HTML5</description>
 	<developers>
 		<developer>
 			<id>rpawlak</id>
