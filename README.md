@@ -3,7 +3,7 @@
 
 This project is a proof or concept demonstrating that it is possible to migrate an existing Java Applet to a true HTML5 application. The migrated applet is a simple calculator applet that was found on the Internet [here]().
 
-# How does it work?
+## How does it work?
 
 We use [JSweet](http://www.jsweet.org) and the [J4TS](https://github.com/cincheo/j4ts) library to transpile the Java code to JavaScript code.
 
