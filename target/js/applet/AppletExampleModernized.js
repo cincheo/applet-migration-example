@@ -11,6 +11,13 @@ var applet;
     var Color = java.awt.Color;
     var GridLayout = java.awt.GridLayout;
     var TextField = java.awt.TextField;
+    /**
+     * This is the modernized version of the applet, which separates the logic from
+     * the view.
+     *
+     * The separation is done by replacing the "add" of components by a "bind"
+     * operation.
+     */
     var AppletExampleModernized = (function (_super) {
         __extends(AppletExampleModernized, _super);
         function AppletExampleModernized() {

@@ -11,6 +11,15 @@ var applet;
     var Color = java.awt.Color;
     var GridLayout = java.awt.GridLayout;
     var TextField = java.awt.TextField;
+    /**
+     * This is the original applet, as found on the Internet:
+     * http://electrofriends.com/source-codes/software-programs/java/applet-programs
+     * /java-applet-program-for-calculator/.
+     *
+     * It can be packaged to a Jar and run as a regular applet. But it can also be
+     * compiled with JSweet to JavaScript and run in any browser, as a regular HTML5
+     * application.
+     */
     var AppletExample = (function (_super) {
         __extends(AppletExample, _super);
         function AppletExample() {

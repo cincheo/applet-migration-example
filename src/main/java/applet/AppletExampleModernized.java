@@ -12,6 +12,13 @@ import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * This is the modernized version of the applet, which separates the logic from
+ * the view.
+ * 
+ * The separation is done by replacing the "add" of components by a "bind"
+ * operation.
+ */
 public class AppletExampleModernized extends Applet implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
@@ -23,7 +30,11 @@ public class AppletExampleModernized extends Applet implements ActionListener {
 	Button add, sub, mul, div, clear, mod, EQ;
 	char OP;
 
+	// here is the "magic"... we call the bind function to bind a component to
+	// an existing component in the html view (found from its ID).
 	private void bind(Component c, int index) {
+		// we use the JSweet JavaScript reflection API to call the bind
+		// function, since it is not exposed in the API
 		$apply($get(c, "bind"), "cmp" + index);
 	}
 
@@ -45,19 +56,19 @@ public class AppletExampleModernized extends Applet implements ActionListener {
 		EQ = new Button("EQ");
 		t1.addActionListener(this);
 		int index = 0;
-		//add(t1);
+		// add(t1);
 		bind(t1, index++);
 		for (int i = 0; i < 10; i++) {
-			//add(b[i]);
+			// add(b[i]);
 			bind(b[i], index++);
 		}
-//		add(add);
-//		add(sub);
-//		add(mul);
-//		add(div);
-//		add(mod);
-//		add(clear);
-//		add(EQ);
+		// add(add);
+		// add(sub);
+		// add(mul);
+		// add(div);
+		// add(mod);
+		// add(clear);
+		// add(EQ);
 		bind(add, index++);
 		bind(sub, index++);
 		bind(mul, index++);

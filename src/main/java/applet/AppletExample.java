@@ -8,6 +8,15 @@ import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * This is the original applet, as found on the Internet:
+ * http://electrofriends.com/source-codes/software-programs/java/applet-programs
+ * /java-applet-program-for-calculator/.
+ * 
+ * It can be packaged to a Jar and run as a regular applet. But it can also be
+ * compiled with JSweet to JavaScript and run in any browser, as a regular HTML5
+ * application.
+ */
 public class AppletExample extends Applet implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
