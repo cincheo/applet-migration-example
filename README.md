@@ -1,21 +1,22 @@
 
 # Migrating a Java Applet to HTML5
 
-This project is a proof or concept demonstrating that it is possible to migrate an existing Java Applet to a true HTML5 application.
+This project is a proof or concept demonstrating that it is possible to migrate an existing Java Applet to a true HTML5 application. Check out the code of the calculator applet [here]().
 
-Check out the code of the migrated calculator applet [here]().
+# How does it work?
 
 We use [JSweet](http://www.jsweet.org) and the J4TS library to transpile the Java code to JavaScript code.
 
 This migration technique has several advantages:
 
 - We compile the Java code to plain JavaScript code that can run in any browser.
-- There is no VM and no emulation!
+- There is no VM and no emulation.
   - It means no overhead compared to JavaScript.
   - Also, JavaScript APIs can be accessed directly, which is important for actual modernization.
 - The modernized applet is not only better looking, but the code is also more maintainable (view/logic separation).
 - This technique can also apply to plain AWT/Swing and SWT desktop applications.
-- 
+
+For all details, check out the [video](https://www.youtube.com/watch?v=rL5RrhsRcU4).
 
 ## How to launch
 
